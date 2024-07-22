@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio Personal
+                </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    
+                    <li><a href="#contacto" onclick="seleccionar()"></a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img class="foto" src="pa.png" alt="">
+            </div>
+            <h1>Fernando Jara</h1>
+            <h2>Programador - Css y html</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Fernando jara.</span>  Apasionado por la programación, las motos y
+                los autos, mi vida gira en torno a la creación de experiencias digitales y la exploración de la mecánica
+                y la tecnología. Desde joven descubrí mi fascinación por el desarrollo web y todo lo que implica detrás
+                de cada página: desde el diseño hasta la funcionalidad. Me encanta desafiar mis habilidades para crear
+                interfaces intuitivas y estéticas que mejoren la experiencia del usuario.
+
+                Cuando no estoy frente a mi computadora, me encontrarás disfrutando de largos paseos en moto o
+                explorando nuevas rutas en automóvil. También disfruto del deporte, especialmente jugar al fútbol, donde
+                encuentro un equilibrio perfecto entre competencia y camaradería.
+
+                Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo web y compartir mi pasión por
+                la tecnología y la innovación con los demás.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-11-2007
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            9 5999 9569
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Fernando.jara.delgadillo@alumnos.sip.cl
+                        </li>
+
+                        <li>
+                            <strong>Dirección</strong>
+                            Futaleufu 9690, Chile, San ramon
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                    </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <div class="linea2"></div>
+
+    
+    <section id="sobremi" class="sobremi">
+
+        <div class="skill">
+            <div class="skill-title">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-css"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Java</div>
+            <div class="skill-bar">
+                <div class="skill-java"></div>
+            </div>
+        </div>
+
+    </section>
+      
+
+    <div class="linea2"></div>
+
+    <div class="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form action="/enviar.php" method="post">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br>
+      
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br>
+      
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+      
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+      <br>
+      <br>
+      <footer class="derecho">
+        <p>&copy; 2024 Fernando jara. Todos los derechos reservados.</p>
+    </footer>
+      
+    
